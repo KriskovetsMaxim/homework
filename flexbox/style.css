@@ -1,0 +1,46 @@
+body * {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 30px 15px;
+	border-bottom: 3px solid rgb(187, 187, 187);
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+	background-color: black;
+}
+
+.nav-list {
+	display: flex;
+	gap: 15px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-list-item {
+	color: black;
+}
+
+.nav-list-item-link {
+	color: black;
+}
+
+.tel {
+	color: black;
+	font-weight: 600;
+	text-decoration: none;
+}
