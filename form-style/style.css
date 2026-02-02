@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 16px;
+	min-height: 100vh;
+}
+
+.form {
+	max-width: 400px;
+	width: 100%;
+	padding: 30px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+.form-group {
+	border: none;
+	padding: 0;
+}
+
+.form-group-title {
+	font-weight: 700;
+	font-size: 20px;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.message {
+	min-height: 30px;
+	max-height: 150px;
+	resize: vertical;
+}
+
+.message,
+.input-field {
+	border: 1px solid #333;
+	border-radius: 6px;
+	width: 100%;
+	padding: 5px 12px;
+	margin-bottom: 20px;
+	outline: none;
+}
+
+.input-field:disabled,
+.message:disabled {
+	opacity: 0.5;
+}
+
+.checkbox-label {
+	padding-left: 22px;
+}
+
+.checkbox {
+	position: absolute;
+	appearance: none;
+	outline: none;
+}
+
+.checkbox::after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	margin-left: -22px;
+	border: 1px solid #333;
+	border-radius: 4px;
+	cursor: url(./icon/left-click.png) 2 2, auto;
+}
+
+.checkbox:checked::after {
+	background: url(./icon/check-icon.svg) no-repeat center, #9e1fff;
+}
+
+.checkbox-text {
+	font-size: 14px;
+}
+
+.button {
+	border: none;
+	border-radius: 6px;
+	padding: 6px 18px;
+	background-color: #9e1fff;
+	color: #fff;
+	transition: opacity 0.2s;
+	cursor: url(./icon/left-click.png) 2 2, auto;
+}
+
+.button:hover {
+	opacity: 0.85;
+}
+
+.button:not(:disabled):active {
+	background-color: #8719db;
+}
+
+.button:disabled,
+.checkbox:disabled::after {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.input-field:focus-visible,
+.message:focus-visible,
+.checkbox:focus-visible::after,
+.button:focus-visible {
+	outline: 2px solid #9e1fff;
+	outline-offset: 1px;
+}
