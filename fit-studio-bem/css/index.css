@@ -1,0 +1,281 @@
+.hero {
+	position: relative;
+	padding-top: 80px;
+}
+
+.hero::before {
+	bottom: 106px;
+	width: 100%;
+}
+
+.hero__container {
+	display: flex;
+	gap: 28px;
+}
+
+.hero__info {
+	max-width: 492px;
+}
+
+.hero__title {
+	margin-bottom: 40px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+	font-size: 62px;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+
+.hero__title--accent {
+	color: #3596ed;
+	font-weight: 600;
+}
+
+.hero__text {
+	max-width: 440px;
+	margin-bottom: 140px;
+}
+
+
+.hero__images {
+	position: relative;
+	display: flex;
+}
+
+.hero__img {
+	width: 347px;
+	height: 513px;
+}
+
+.hero__img--man {
+	width: 353px;
+}
+
+.hero__choose {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 161px;
+	padding: 22px;
+	background: rgb(255 255 255 / 0.9);
+	border: 1px solid #535755;
+	text-align: center;
+}
+
+
+.news__container {
+	display: flex;
+	gap: 28px;
+}
+
+.news__article {
+	display: flex;
+	flex-direction: column;
+	max-width: 284px;
+	flex: 1 1 25%;
+	background-color: #fff;
+	border: 1px solid #d3cbd9;
+	overflow: hidden;
+}
+
+.news__img {
+	display: block;
+}
+
+.news__info {
+	padding: 20px 20px 0;
+	margin-bottom: 12px;
+}
+
+.news__date {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+
+.news__footer{
+	margin-top: auto;
+	padding: 0 20px 20px;
+}
+
+.news__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #3596ed;
+	
+}
+
+.news__link::after {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 9px;
+	background-image: url(../imgs/arrow-right-icon.svg);
+	transition: transform 0.2s;
+}
+
+.news__link:hover::after {
+	transform: translateX(5px);
+}
+
+.faq {
+	position: relative;
+}
+
+.faq::before {
+	top: 215px;
+}
+
+.faq__container {
+	display: flex;
+	gap: 28px;
+}
+
+details {
+	border-block: 1px solid #d3cbd9;
+	margin-bottom: 20px;
+}
+
+details:last-child {
+	margin-bottom: 0;
+}
+
+details[open] summary::after {
+	transform: rotate(180deg);
+}
+
+summary {
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	gap: 10px;
+	list-style: none;
+	padding: 20px;
+	cursor: pointer;
+}
+
+summary::after {
+	content: "";
+	display: inline-block;
+	flex-shrink: 0;
+	width: 17px;
+	height: 22px;
+	background: url(../imgs/arrow-down-icon.svg) no-repeat center / cover;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+details > p {
+	padding: 0 20px 20px;
+}
+
+@media (width <= 1440px) {
+	.hero__images img {
+		max-width: 50%;
+	}
+}
+
+@media (width <= 992px) {
+	.hero {
+		padding-top: 60px;
+	}
+	
+	.hero__container {
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+	}
+
+	.hero__info {
+		text-align: center;
+		
+	}
+
+	.hero__title {
+		font-size: 55px;
+	}
+
+	.hero__text {
+		margin-bottom: 30px;
+		max-width: inherit;
+	}
+
+	.news__container {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.news__article {
+		min-width: 350px;
+		flex-basis: 50%;
+	}
+
+	.news__img {
+		width: 100%;
+	}
+
+	.faq::before {
+		display: none;
+	}
+
+	.faq__container {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}
+
+@media (width <= 768px) {
+	.hero__info {
+		max-width: 455px;
+	}
+
+	.hero__title {
+		font-size: 50px;
+	}
+
+	.hero::before {
+		display: none;
+	}
+
+	.news__article {
+		max-width: 400px;
+		flex-basis: 100%;
+	}
+
+	.title-medium {
+		font-size: 22px;
+	}
+}
+
+@media (width <= 576px) {
+	.hero {
+		padding-top: 50px;
+	}
+
+	.hero__info {
+		max-width: 382px;
+	}
+
+	.hero-title {
+		font-size: 42px;
+	}
+
+	.hero__choose {
+		max-width: 125px;
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	.title-medium {
+		font-size: 18px;
+	}
+}
+
