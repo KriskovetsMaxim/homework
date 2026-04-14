@@ -1,0 +1,31 @@
+.page {
+	font-family: var(--font-family);
+	font-weight: 400;
+	color: var(--main-color);
+}
+
+.page__body {
+	height: 300vw;
+	min-width: 375px;
+	background-color: var(--bg-color);
+}
+
+.page__body--no-scroll {
+	overflow-y: hidden;
+}
+
+.section {
+	margin-bottom: 28px;
+}
+
+.container {
+	width: min(var(--container-width), 100% - var(--container-padding) * 2);
+	margin-inline: auto;
+}
+
+.text-description {
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	color: var(--main-color);
+}

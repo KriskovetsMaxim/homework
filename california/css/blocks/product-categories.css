@@ -1,0 +1,150 @@
+.product-categories__title {
+	font-size: 42px;
+	padding-bottom: 9px;
+	line-height: 125%;
+	text-align: center;
+	font-family: var(--second-family);
+}
+
+.product-categories__description {
+	max-width: 628px;
+	margin: 0 auto;
+	padding-bottom: 55px;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	font-family: var(--second-family);
+}
+
+.product-categories__list {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 50px 16px;
+}
+
+
+.product-category__card {
+	display: flex;
+	box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.product-category__card:nth-child(1) {
+	grid-column: 6 span;
+
+}
+
+.product-category__card:nth-child(2),
+.product-category__card:nth-child(3) {
+	grid-column: 3 span;
+	grid-row: 2 span;
+}
+
+.product-category__card:nth-child(4) {
+	grid-column: 6 span;
+
+}
+
+.product-category__link{
+	display: flex;
+	
+	color: var(--main-color);
+}
+
+/* Card Style Start */
+
+.laptop-card {
+	padding-inline: 42px;
+	align-items: end;
+}
+
+.laptop-card .product-category__wrapper-description{
+	max-width: 192px;
+	text-align: right;
+}
+
+.laptop-card .product-category__wrapper-img {
+	padding-right: 55px;
+}
+
+@media (width <= 992px) {
+	.laptop-card {
+		padding-inline: 25px;
+	}
+}
+
+.laptop-card, .phone-card {
+	flex-direction: column-reverse;
+}
+
+.phone-card .product-category__wrapper-img {
+	padding: 0 0 42px 17px;
+}
+
+.phone-card .product-category__wrapper-description {
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.phone-card, .tablet-card {
+	margin: 0 auto;
+	justify-content: center;
+	text-align: center;
+}
+
+.tablet-card {
+	flex-direction: column;
+	align-items: center;
+}
+
+.tablet-card .product-category__wrapper-description {
+	max-width: 233px;
+	padding-bottom: 42px;
+}
+
+.watch-card {
+	flex-direction:row-reverse;
+	align-items: center;
+	padding-inline: 42px;
+}
+
+.watch-card .product-category__wrapper-description {
+	padding-left: 46px;
+	text-align: right;
+	
+	
+}
+
+@media (width <= 992px) {
+	.watch-card {
+		padding-inline: 25px;
+	}
+
+	.watch-card .product-category__wrapper-description {
+		padding-left: 30px;
+	}
+}
+
+/* Card Style End */
+
+.product-category__title {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 128%;
+}
+
+.product-category__description {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 120%;
+	font-family: var(--second-family);
+}
+
+@media (width <= 992px) {
+	.product-category__description {
+		font-size: 20px;
+	}
+}
+
+.product-category__img {
+	display: block;
+}

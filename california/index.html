@@ -1,0 +1,339 @@
+<!doctype html>
+<html class="page" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+			defer
+		></script>
+		<script defer src="./js/index.js" type="module"></script>
+		<link rel="stylesheet" href="./css/index.css" />
+		<title>California</title>
+	</head>
+	<body class="page__body">
+		<header class="header header--fixed">
+			<div class="container header__container">
+				<a href="#" class="logo header__logo">
+					<img
+						class="header__logo-img"
+						width="170"
+						height="20"
+						src="./icons/logo-icon.svg"
+						alt="Логотип California"
+					/>
+				</a>
+				<nav class="menu header__menu" id="header__menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">All products</a>
+						</li>
+						<li class="menu__item dropdown">
+							<a href="#" class="menu__link dropdown-toggle"
+								>Solutions
+								<img
+									class="menu__link-icon"
+									src="./icons/arrow-down-icon.svg"
+									width="12"
+									height="8"
+									alt="Стрелка в низ"
+								/>
+							</a>
+							<ul class="dropdown__content">
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link">1</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link">2</a>
+								</li>
+								<li class="dropdown__item">
+									<a href="#" class="dropdown__link">3</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">About</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Support</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__controls">
+					<div class="header__actions">
+						<button
+							class="header__button-actions"
+							aria-label="Поиск"
+							title="Поиск"
+						>
+							<svg width="24" height="24">
+								<use
+									class="header__button-icon"
+									href="./icons/actions-icons.svg#search"
+								></use>
+							</svg>
+						</button>
+						<button
+							class="header__button-actions"
+							aria-label="Корзина"
+							title="Корзина"
+						>
+							<svg width="24" height="24">
+								<use
+									class="header__button-icon"
+									href="./icons/actions-icons.svg#cart"
+								></use>
+							</svg>
+						</button>
+						<button
+							class="header__burger burger"
+							aria-label="Открыть меню"
+							aria-expanded="false"
+							aria-controls="header__menu"
+						>
+							<svg width="24" height="24">
+								<use
+									class="burger__icon-menu"
+									href="./icons/burger-menu-icon.svg#burger"
+								></use>
+								<use
+									class="burger__icon-cross"
+									href="./icons/burger-menu-icon.svg#cross"
+								></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero section">
+				<div class="container hero__container">
+					<div class="hero__slider-wrapper">
+						<div class="swiper hero__slider">
+							<button
+								class="hero__slider-button hero__slider-button--prev"
+								aria-label="Предыдущий слайд"
+							>
+								<svg width="14" height="26">
+									<use
+										class="hero__slider-button-icon"
+										href="./icons/arrow-left-icon.svg#arrow"
+									></use>
+								</svg>
+							</button>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide hero__slide">
+									<div class="hero__slide-wrapper">
+										<div class="hero__slide-description">
+											<h1 class="hero__title">
+												The new phones are here take a
+												look.
+											</h1>
+											<p class="hero__description">
+												Lorem ipsum dolor sit amet,
+												consectetur adipiscing elit.
+												Scelerisque in est dui, aliquam,
+												tempor. Faucibus morbi turpis.
+											</p>
+											<a href="#" class="hero__link">
+												Explore
+											</a>
+										</div>
+										<div class="hero__slide-img-wrapper">
+											<img
+												class="hero__slide-img"
+												src="./images/image-hero-skide-1.png"
+												width="647"
+												height="550"
+												alt="Обзорное изображение телефона в трех плоскостях"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide hero__slide">
+									<div class="hero__slide-wrapper">
+										<div class="hero__slide-description">
+											<h1 class="title hero__title">
+												The new phones are here take a
+												look.
+											</h1>
+											<p class="hero__description">
+												Lorem ipsum dolor sit amet,
+												consectetur adipiscing elit.
+												Scelerisque in est dui, aliquam,
+												tempor. Faucibus morbi turpis.
+											</p>
+											<a href="#" class="hero__link">
+												Explore
+											</a>
+										</div>
+										<div class="hero__slide-img-wrapper">
+											<img
+												class="hero__slide-img"
+												src="./images/image-hero-skide-1.png"
+												width="647"
+												height="550"
+												alt="Обзорное изображение телефона в трех плоскостях"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide hero__slide">
+									<div class="hero__slide-wrapper">
+										<div class="hero__slide-description">
+											<h1 class="title hero__title">
+												The new phones are here take a
+												look.
+											</h1>
+											<p class="hero__description">
+												Lorem ipsum dolor sit amet,
+												consectetur adipiscing elit.
+												Scelerisque in est dui, aliquam,
+												tempor. Faucibus morbi turpis.
+											</p>
+											<a href="#" class="hero__link">
+												Explore
+											</a>
+										</div>
+										<div class="hero__slide-img-wrapper">
+											<img
+												class="hero__slide-img"
+												src="./images/image-hero-skide-1.png"
+												width="647"
+												height="550"
+												alt="Обзорное изображение телефона в трех плоскостях"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<button
+								class="hero__slider-button hero__slider-button--next"
+								aria-label="Предыдущий слайд"
+							>
+								<svg width="14" height="26">
+									<use
+										class="hero__slider-button-icon"
+										href="./icons/arrow-left-icon.svg#arrow"
+									></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="categories section">
+				<div class="container product-categories__container">
+					<h2 class="product-categories__title">
+						Shop our latest offers and categories
+					</h2>
+					<p class="product-categories__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Scelerisque in est dui, aliquam, tempor. Faucibus morbi
+						turpis. Lorem ipsum dolor sit amet, consectetur
+						adipiscing elit.
+					</p>
+					<div class="product-categories__list">
+						<article class="product-category__card">
+							<a href="#" class="product-category__link laptop-card">
+								<div
+									class="product-category__wrapper-description"
+								>
+									<h3 class="product-category__title">
+										Laptops
+									</h3>
+									<p class="product-category__description">
+										True Laptop Solution
+									</p>
+								</div>
+								<picture class="product-category__wrapper-img">
+									<source />
+									<img
+										class="product-category__img"
+										src="./images/categories-images/laptop-img.png"
+										width="500"
+										height="377"
+										alt="Ноутбук"
+									/>
+								</picture>
+							</a>
+						</article>
+						<article class="product-category__card">
+							<a href="#" class="product-category__link phone-card">
+								<div
+									class="product-category__wrapper-description"
+								>
+									<h3 class="product-category__title">
+										Phones
+									</h3>
+									<p class="product-category__description">
+										Your day to day life
+									</p>
+								</div>
+								<picture class="product-category__wrapper-img">
+									<source />
+									<img
+										class="product-category__img"
+										src="./images/categories-images/phone-img.png"
+										alt="Ноутбук"
+									/>
+								</picture>
+							</a>
+						</article>
+						<article class="product-category__card">
+							<a href="#" class="product-category__link tablet-card">
+								<div
+									class="product-category__wrapper-description"
+								>
+									<h3 class="product-category__title">
+										Tablet
+									</h3>
+									<p class="product-category__description">
+										Empower your work
+									</p>
+								</div>
+								<picture class="product-category__wrapper-img">
+									<source />
+									<img
+										class="product-category__img"
+										src="./images/categories-images/tablet-img.png"
+										alt="Ноутбук"
+									/>
+								</picture>
+							</a>
+						</article>
+						<article class="product-category__card">
+							<a href="#" class="product-category__link watch-card">
+								<div
+									class="product-category__wrapper-description"
+								>
+									<h3 class="product-category__title">
+										Watch
+									</h3>
+									<p class="product-category__description">
+										Not just stylisht
+									</p>
+								</div>
+								<picture class="product-category__wrapper-img">
+									<source />
+									<img
+										class="product-category__img"
+										src="./images/categories-images/wach-img.png"
+										alt="Ноутбук"
+									/>
+								</picture>
+							</a>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
