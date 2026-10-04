@@ -1,0 +1,21 @@
+/* base */
+@import url("./base/normalize.css");
+@import url("./base/fonts.css");
+@import url("./base/global.css");
+@import url("./base/vars.css");
+
+
+/* blocks */
+@import url("./blocks/header.css");
+@import url("./blocks/menu.css");
+@import url("./blocks/burger.css");
+@import url("./blocks/hero.css");
+@import url("./blocks/product-categories.css");
+@import url("./blocks/top-selling.css");
+@import url("./blocks/best-categories.css");
+@import url("./blocks/advantages.css");
+@import url("./blocks/search.css");
+@import url("./blocks/mailing.css");
+@import url("./blocks/footer.css");
+@import url("./blocks/modal.css");
+@import url("./blocks/modal-search.css");

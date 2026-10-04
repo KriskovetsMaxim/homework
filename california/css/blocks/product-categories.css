@@ -1,0 +1,267 @@
+
+.product-categories__description {
+	max-width: 628px;
+	margin: 0 auto;
+	padding-bottom: 55px;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	font-family: var(--second-family);
+}
+
+.product-categories__list {
+	display: grid;
+}
+
+@media (width > 1200px) {
+	.product-categories__list {
+		gap: 50px 16px;
+	}
+		
+}	
+
+@media (width <= 1200px) {
+	.product-categories__list {
+		gap: 25px 16px;
+	}
+		
+}
+
+@media (width > 768px) {
+	.product-categories__list {
+		grid-template-columns: 2fr 1fr 1fr;
+		
+	}
+		
+}	
+
+@media (width <= 768px) {
+	.product-categories__list {
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+	}
+}
+
+@media (width <= 576px) {
+	.product-categories__list {
+		grid-template-columns: 1fr;
+	}
+}
+
+.product-category__card {
+	display: flex;
+	box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (width <= 768px) {
+	.product-category__card {
+		justify-content: center;
+	}
+}
+
+@media (width > 768px) {
+	.product-category__card:nth-child(2),
+	.product-category__card:nth-child(3) {
+		grid-row: 2 span;
+	}
+}
+
+@media (width > 768px) {
+	.laptop-card,
+	.watch-card {
+		max-width: 639px;
+	}
+	.phone-card,
+	.tablet-card {
+		max-width: 312px;
+	}
+}
+
+.product-category__link {
+	display: flex;
+	color: var(--main-color);
+}
+
+/* Card Style Start */
+
+.laptop-card__link {
+	padding-inline: 42px;
+	align-items: end;
+}
+
+@media (width <= 992px) {
+	.laptop-card__link {
+		padding-inline: 20px;
+	}
+}
+
+@media (width > 769px) {
+	.laptop-card__link .product-category__wrapper-description {
+		max-width: 192px;
+		text-align: right;
+	}
+
+	.laptop-card__link .product-category__wrapper-img {
+		padding-right: 55px;
+	}
+
+	.laptop-card__link,
+	.phone-card__link {
+		flex-direction: column-reverse;
+	}
+}
+
+@media (width <= 768px) {
+	.laptop-card__link {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.laptop-card__link .product-category__wrapper-description {
+		text-align: center;
+		padding-block: 10px 20px;
+	}
+
+	.laptop-card__link,
+	.phone-card__link {
+		flex-direction: column;
+	}
+}
+
+@media (width <= 576px) {
+	.laptop-card__link {
+		padding-inline: 60px;
+	}
+}
+
+.phone-card__link .product-category__wrapper-description {
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+@media (width > 769px) {
+	.phone-card__link .product-category__wrapper-img {
+		padding: 0 0 42px 17px;
+	}
+
+	.phone-card__link,
+	.tablet-card__link {
+		margin: 0 auto;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media (width <= 768px) {
+	.phone-card__link .product-category__wrapper-description {
+		text-align: center;
+		padding-block: 10px 20px;
+	}
+
+	.phone-card__link .product-category__wrapper-img {
+		max-width: 150px;
+	}
+}
+
+.tablet-card__link {
+	flex-direction: column;
+	align-items: center;
+}
+
+.tablet-card__link .product-category__wrapper-description {
+	max-width: 233px;
+}
+
+@media (width > 768px) {
+	
+	.tablet-card__link .product-category__wrapper-img {
+		padding-top: 42px;
+	}
+}
+
+@media (width <= 768px) {
+	.tablet-card__link {
+		justify-content: center;
+	}
+
+	.product-category__wrapper-description {
+		padding-block: 10px 20px;
+		text-align: center;
+	}
+
+	.tablet-card__link .product-category__wrapper-img {
+		max-width: 150px;
+	}
+}
+
+.watch-card__link {
+	flex-direction: row-reverse;
+	align-items: center;
+	padding-inline: 42px;
+}
+
+
+@media (width > 992px) {
+	.watch-card__link {
+		padding-inline: 25px;
+	}
+
+	.watch-card__link .product-category__wrapper-description {
+		padding-left: 46px;
+		text-align: right;
+	}
+}
+
+@media (width > 768px) {
+	.watch-card__link {
+		flex-direction: row-reverse;
+		align-items: center;
+		padding-inline: 42px;
+	}
+
+	.watch-card__link .product-category__wrapper-description {
+		padding-left: 46px;
+		text-align: right;
+	}
+}
+
+@media (width <= 768px) {
+	.watch-card__link {
+		flex-direction: column;
+	}
+
+	.watch-card__link .product-category__wrapper-description {
+		text-align: center;
+	}
+}
+
+@media (width <= 576px) {
+	.watch-card__link .product-category__wrapper-img {
+		max-width: 250px;
+	}
+}
+
+/* Card Style End */
+
+.product-category__title {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 128%;
+}
+
+.product-category__description {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 120%;
+	font-family: var(--second-family);
+}
+
+@media (width <= 992px) {
+	.product-category__description {
+		font-size: 20px;
+	}
+}
+
+.product-category__img {
+	display: block;
+}
